@@ -1,0 +1,5 @@
+F1  F2   V2   Total
+Vf  THEN  190 479
+Vf  AdvO  84  640
+Aux THEN  149 234
+Aux AdvO  75  283

@@ -1,0 +1,5 @@
+F1  F2   V2   Total
+Vf  THEN  100 1000
+Vf  AdvO  100 1000
+Aux THEN  100 1000
+Aux AdvO  100 1000
