@@ -1,0 +1,36 @@
+Parmfile Documentation:
+
+In the parmfile: any parameter may be changed. Also the order can be changed.
+
+The name of the parameter file can be entered in the cmd line: -prm <string>
+
+IMPORTANT: no parameter can be left blank. Need to make robust.
+IMPORTANT: The number of spaces cannot be changed. Keep to the format.
+
+POP_1_SIZE = [any positive integer]: Size of population 1 
+POP_2_SIZE = [any positive integer]: Size of population 2
+INITIAL_UTTERANCES = [any positive integer]: The Number of exemplars at the beginning
+CROSS_INTERACTION = [float between 0 and 1]: How much of the conversations are between the populations   
+NR_OF_INTERACTIONS =  [any positive integer]: how much interactions are there in one run
+PRINT_EVERY_N = [any positive integer]: How often is the result printed.
+DO_REMOVE_EXEMPLARS = 0 (False) or 1 (True). : Do the exemplars need to be removed?
+DOUBT_STEP = [any positive float]: How big are the doubt steps
+DOUBT_INFLUENCE = [any positive float]: How much does the doubt weigh?
+N_RUNS = [any positive integer]: the number of times the experment must be repeated
+USE_SIGMOID = 1,2,0: 
+	1 = use weighed average of "classical probs" and sigmoid probs.
+	2 = only use sigmoid probs
+	0 = only use 'classical probs'
+
+G_VF = [any positive float]
+G_THEN = [any positive float]
+
+USE_DEATH = 1,2,0
+	1: agents die when they are out of exemplars
+	2: agents die after N interactions
+	0: agents do not die
+	
+DIE_AFTER_N = [any positive integer]. IS ONLY RELEVANT WHEN USE DEATH = 2. This parameter determines after how many interactions an agent dies.
+
+GEN_2_START = float between 0 and 1. At what percentage of the epochs does a new generation start 
+GEN_3_START = float between 0 and 1. At what percentage of the epochs does a new generation start
